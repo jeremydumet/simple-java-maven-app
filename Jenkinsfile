@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine' 
-            args '-v /root/.m2:/root/.m2 https_proxy=http://web-proxy.bbn.hpecorp.net:8080' 
+            args '-v /root/.m2:/root/.m2' 
         }
     }
     stages {
